@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dogs>
+    <dog>
+        <breed>Golden Retriever</breed>
+        <color>Golden</color>
+        <country>United States</country>
+    </dog>
+    <dog>
+        <breed>German Shepherd</breed>
+        <color>Black and Tan</color>
+        <country>Germany</country>
+    </dog>
+    <dog>
+        <breed>Poodle</breed>
+        <color>White</color>
+        <country>France</country>
+    </dog>
+</dogs>

@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Images</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #eef2f7;
+        }
+
+        nav {
+            padding: 0px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background: rgb(0, 16, 59)
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 50px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        #name {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        nav h1 {
+            font-size: 20px;
+            padding-left: 50px;
+        }
+
+        nav a {
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+
+        #fetchbutton {
+            display: flex;
+            margin: auto;
+            height: 33px;
+            width: 205px;
+            border-radius: 11px;
+            background: rgb(0, 16, 59);
+            color: whitesmoke;
+            justify-content: center;
+
+        }
+
+        #imageField {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        #imageField img {
+            height: 604px;
+            width: 500px;
+            padding: 30px;
+        }
+
+        .btndiv{
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" id="name">
+                <h1>Wagging Tales</h1>
+            </a>
+            <ul>
+                <li class="nav-item">
+                    <a href="a_index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="b_feedback.html">FeedBack</a>
+                </li>
+                <li class="nav-item">
+                    <a href="c_canine.html">Canine Catalog</a>
+                </li>
+            </ul>
+    </nav>
+
+    <div class="btndiv">
+        <input type="button" value="Fetch Random Dog Image" id="fetchbutton">
+    </div>
+    <div id="imageField"></div>
+</body>
+
+<script src="a_fetchdog.js"></script>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #eef2f7;
+        }
+
+        nav {
+            padding: 0px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background: rgb(0, 16, 59)
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 50px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        #name1 {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        nav h1 {
+            font-size: 20px;
+            padding-left: 50px;
+        }
+
+        nav a {
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        .submitbtn{
+            margin-top: 22px;
+            height: 30px;
+            width: 91px;
+            background: blue;
+            color: white;
+            border-radius: 7px;
+        }
+    </style>
+    
+
+</head>
+<body>
+        <nav>
+        <div class="container">
+            <a href="#" id="name1">
+                <h1>Wagging Tales</h1>
+            </a>
+            <ul>
+                <li class="nav-item">
+                    <a href="a_index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="b_feedback.html">FeedBack</a>
+                </li>
+                <li class="nav-item">
+                    <a href="c_canine.html">Canine Catalog</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+          <form>
+            <h2>Leave a comment</h2>
+        <div>
+
+        <div>
+            <p>Name</p>
+            <input type="text" name="name" id="name" style=" height: 25px; width: 210px">
+        </div>
+        
+        <div>
+            <p>Email</p>
+            <input type="email" name="email" id="email" style=" height: 25px; width: 210px">
+        </div>
+        
+        <div>
+            <p>Comment</p>
+            <input type="text" name="comment" id="comment" style=" height: 60px; width: 210px">
+        </div>
+
+            <div>
+              <input type="button" class="submitbtn" value="Submit" onclick="validateForm()">
+            </div>
+          </form>
+        </div>
+      </body>
+      <script src="b_form.js"></script>
+</html>
+

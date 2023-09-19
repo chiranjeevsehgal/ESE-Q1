@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog JSON</title>
+    <style>
+        body {
+            background: #eef2f7;
+        }
+        #fetchbutton{
+            display: flex;
+            margin: auto;
+            height: 33px;
+            width: 205px;
+            border-radius: 11px;
+            background: rgb(0, 16, 59);
+            color: whitesmoke;
+            justify-content: center;
+        }
+
+        #dogField{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="Fetch Dogs" id="fetchbutton">
+    <div id="dogField"></div>
+</body>
+
+<script src="d_localfetch.js"></script>
+</html>

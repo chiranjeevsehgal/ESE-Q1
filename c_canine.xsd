@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="dogs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="dog" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="breed"/>
+              <xs:element type="xs:string" name="color"/>
+              <xs:element type="xs:string" name="country"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
